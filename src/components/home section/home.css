@@ -42,7 +42,7 @@
     left: 10%;
     background-color: rgba(0, 0, 0, 0.7);
     width: 35%;
-    height: 65vh;
+    height: 69vh;
     border-radius: 5px;
     color: white;
     border-radius: 8px;
@@ -67,18 +67,26 @@
   }
   @media screen and (max-width: 768px) {
     .slider {
-      height: 65vh;
+      height: auto;
     }
     .slide img {
-      height: 65vh;
+      height: auto;
     }
     .slide-form {
       left: 5%;
-      top: 32%;
-      width: 90%;
-      height: 55vh;
+        top: 20%;
+        width: 90%;
+        height: 58vh;
+
+    }
+    .control-btn .next{
+      right: 0%;
+    }
+    .control-btn .prev{
+      left: 0%;
     }
   }
+
   
   .homeabout{
     overflow: hidden;

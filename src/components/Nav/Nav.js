@@ -25,20 +25,15 @@ export default function Nav() {
             <li><Link to='/testimonials' onClick={mobileMenu}>Testimonials</Link></li>
             <li><Link to='/blog' onClick={mobileMenu}>Blog</Link></li>
             <li><Link to='/contact' onClick={mobileMenu}>Contacts</Link></li>
-          </ul>
-          <div className='login'>
-            <ul>
-              <Link to='contact' style={{ background: 'none' }}>
-                <button className='contact'>Request a Quote</button>
-              </Link>
+             <li> <a to='contact' style={{ background: 'none' }}>Request a Quote </a></li>
               <li>
-                <Link to='register' className='login-btn'>Register</Link>
+                <a to='register' >Register</a>
               </li>
               <li>
-                <Link to='sign-in' className='login-btn'>Sign In</Link>
+                <a to='sign-in' >Sign In</a>
               </li>
             </ul>
-          </div>
+        
         </div>
       </nav>
     </>

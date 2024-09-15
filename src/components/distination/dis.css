@@ -1,20 +1,43 @@
 .desi .title {
-    margin: 0;
-    background-color: #31b675;
+  margin: 0;
+  background-color: #31b675;
+}
+
+.desi h3 {
+  margin: 0;
+  padding: 15px 0;
+  color: white;
+}
+
+.gallery .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Medium screens (Tablets, small desktops) */
+@media (max-width: 1200px) {
+  .gallery .content {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .desi h3 {
-    margin: 0;
-    padding: 15px 0 15px 0;
-    color: white;
+}
+
+/* Small screens (Large phones) */
+@media (max-width: 768px) {
+  .gallery .content {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .gallery .content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+}
+
+/* Extra small screens (Mobile phones) */
+@media (max-width: 480px) {
+  .gallery .content {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 
-  @media (max-width:1200px) {
-    .gallery .content{
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .desi h3 {
+    padding: 10px 0;
+    font-size: 18px;
   }
+}
