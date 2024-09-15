@@ -1,0 +1,106 @@
+form textarea,
+form input {
+  width: 100%;
+  border: 2px solid #ececec;
+  margin-top: 10px;
+}
+.contact span {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+form span label {
+  color: crimson;
+}
+form .inputlast {
+  margin: 20px 0 20px 0;
+}
+form .primary-btn {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+.contact p {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  margin: 10px 0;
+}
+/*-----------side-content-----------*/
+.side-content h3 {
+  margin-bottom: 15px;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+}
+
+
+.sign-box{
+  text-align: center;
+  box-shadow: 2px 3px 14px 2px gray;
+  padding: 34px;
+  width: 426px;
+  border-radius: 9px;
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  transform: translate(-50px, -50px);
+  z-index: 10001;
+  background-color: whitesmoke;
+  transition: 0.5s;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.sign-box h3:not(.contact .sign-box h3 p){
+  font-size: 20px;
+  color: #31b675;
+  font-weight: bold;
+  text-align: left;
+}
+.sign-box p{
+  color: black;
+  text-align: center !important;
+}
+.sign-box i{
+  position: relative;
+  left: 188px;
+  top: -67px;
+  font-size: 34px;
+  color: red;
+  cursor: pointer;
+}
+.input textarea {
+  width: 100%; /* Full width of the form */
+  padding: 10px; /* Add padding for better appearance */
+  box-sizing: border-box; /* Include padding in the element's total width */
+  margin-top: 10px; /* Add some margin if needed */
+  outline: none;
+}
+.side-content h3{
+  text-align: center;
+}
+/*-----------side-content-----------*/
+@media screen and (max-width: 768px) {
+  .contact .flex {
+    flex-direction: column;
+  }
+  .contact .side-content{
+    position: absolute;
+    top: 1110px;
+     width: 80%;
+     margin-right: -44px;
+  }
+}
